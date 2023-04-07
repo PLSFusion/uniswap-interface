@@ -181,7 +181,7 @@ export default function SettingsTab({ placeholderSlippage }: { placeholderSlippa
         </ModalContentWrapper>
       </Modal>
       <StyledMenuButton
-        disabled={!isSupportedChainId(chainId)}
+        disabled={false} //{!isSupportedChainId(chainId)}
         onClick={toggle}
         id="open-settings-dialog-button"
         aria-label={t`Transaction Settings`}

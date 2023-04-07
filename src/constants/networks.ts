@@ -30,6 +30,11 @@ export const FALLBACK_URLS: { [key in SupportedChainId]: string[] } = {
     // "Fallback" URLs
     'https://rpc.ankr.com/eth_goerli',
   ],
+  [SupportedChainId.PLS]: ['https://rpc.pulsechain.com'],
+  [SupportedChainId.TPLS]: ['https://rpc.v3.testnet.pulsechain.com'],
+  [SupportedChainId.TPLS4]: ['https://rpc.v4.testnet.pulsechain.com'],
+  [SupportedChainId.ETHW]: ['https://mainnet.ethereumpow.org'],
+  [SupportedChainId.ETHF]: ['https://rpc.etherfair.org'],
   [SupportedChainId.POLYGON]: [
     // "Safe" URLs
     'https://polygon-rpc.com/',
@@ -85,6 +90,11 @@ export const RPC_URLS: { [key in SupportedChainId]: string[] } = {
     ...FALLBACK_URLS[SupportedChainId.MAINNET],
   ],
   [SupportedChainId.GOERLI]: [`https://goerli.infura.io/v3/${INFURA_KEY}`, ...FALLBACK_URLS[SupportedChainId.GOERLI]],
+  [SupportedChainId.PLS]: FALLBACK_URLS[SupportedChainId.PLS],
+  [SupportedChainId.TPLS]: FALLBACK_URLS[SupportedChainId.TPLS],
+  [SupportedChainId.TPLS4]: FALLBACK_URLS[SupportedChainId.TPLS4],
+  [SupportedChainId.ETHW]: FALLBACK_URLS[SupportedChainId.ETHW],
+  [SupportedChainId.ETHF]: FALLBACK_URLS[SupportedChainId.ETHF],
   [SupportedChainId.OPTIMISM]: [
     `https://optimism-mainnet.infura.io/v3/${INFURA_KEY}`,
     ...FALLBACK_URLS[SupportedChainId.OPTIMISM],

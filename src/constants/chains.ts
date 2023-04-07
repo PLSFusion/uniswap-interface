@@ -6,6 +6,13 @@ export enum SupportedChainId {
   MAINNET = 1,
   GOERLI = 5,
 
+  PLS = 369,
+  TPLS = 942,
+  TPLS4 = 943,
+
+  ETHW = 10001,
+  ETHF = 513100,
+
   ARBITRUM_ONE = 42161,
   ARBITRUM_GOERLI = 421613,
 
@@ -22,6 +29,11 @@ export enum SupportedChainId {
 export const CHAIN_IDS_TO_NAMES = {
   [SupportedChainId.MAINNET]: 'mainnet',
   [SupportedChainId.GOERLI]: 'goerli',
+  [SupportedChainId.PLS]: 'pulsechain',
+  [SupportedChainId.TPLS]: 'pulsechain_testnet_v3',
+  [SupportedChainId.TPLS4]: 'pulsechain_testnet_v4',
+  [SupportedChainId.ETHW]: 'ethereum_pow',
+  [SupportedChainId.ETHF]: 'ethereum_fair',
   [SupportedChainId.POLYGON]: 'polygon',
   [SupportedChainId.POLYGON_MUMBAI]: 'polygon_mumbai',
   [SupportedChainId.CELO]: 'celo',
@@ -76,6 +88,11 @@ export type SupportedTestnetChainId = typeof TESTNET_CHAIN_IDS[number]
 export const L1_CHAIN_IDS = [
   SupportedChainId.MAINNET,
   SupportedChainId.GOERLI,
+  SupportedChainId.PLS,
+  SupportedChainId.TPLS,
+  SupportedChainId.TPLS4,
+  SupportedChainId.ETHW,
+  SupportedChainId.ETHF,
   SupportedChainId.POLYGON,
   SupportedChainId.POLYGON_MUMBAI,
   SupportedChainId.CELO,

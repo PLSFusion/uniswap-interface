@@ -9,6 +9,18 @@ import { transformSwapRouteToGetQuoteResult } from 'utils/transformSwapRouteToGe
 
 export function toSupportedChainId(chainId: ChainId): SupportedChainId | undefined {
   const numericChainId: number = chainId
+
+  // smart-order-router needs forked then these can be removed.
+  if (
+    numericChainId === 369 ||
+    numericChainId === 942 ||
+    numericChainId === 943 ||
+    numericChainId === 10001 ||
+    numericChainId === 513100
+  ) {
+    return undefined
+  }
+
   if (SupportedChainId[numericChainId]) return numericChainId
   return undefined
 }

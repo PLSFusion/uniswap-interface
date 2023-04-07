@@ -120,15 +120,7 @@ export function FiatOnrampAnnouncement() {
 
   const openModal = useAppSelector((state) => state.application.openModal)
 
-  if (
-    !account ||
-    acks?.user ||
-    localStorage.getItem(ANNOUNCEMENT_DISMISSED) ||
-    acks?.renderCount >= MAX_RENDER_COUNT ||
-    isMobile ||
-    openModal !== null ||
-    localClose
-  ) {
+  if (!account || acks?.user || acks?.renderCount >= MAX_RENDER_COUNT || isMobile || openModal !== null || localClose) {
     return null
   }
   return (
@@ -137,10 +129,26 @@ export function FiatOnrampAnnouncement() {
       <CloseIcon onClick={handleClose} data-testid="FiatOnrampAnnouncement-close" />
       <Wrapper onClick={handleClick}>
         <Header>
-          <Trans>Buy crypto</Trans>
+          <Trans>WRAPPED TOKENS</Trans>
         </Header>
         <Body>
-          <Trans>Get tokens at the best prices in web3 on Uniswap, powered by Moonpay.</Trans>
+          Uniswap was designed to primarily use the WETH token to facilitate swaping. Nearly every action touching a
+          chains native token uses the WETH contract. In many cases you may find yourself with WETH tokens on chains
+          with native tokens of a different name. This interface was modified to allow you to wrap and unwrap WETH back
+          into a chains native token. Even though the names may not match, the forked over WETH is still backed by the
+          native token (PLS, TPLS, ETHW, etc...)
+        </Body>
+        <Header>
+          <Trans>USE AT YOUR OWN RISK</Trans>
+        </Header>
+        <Body>
+          <Trans>
+            This software is provided “as is”, without warranty of any kind, express or implied, including but not
+            limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no
+            event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in
+            an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use
+            or other dealings in the software.
+          </Trans>
         </Body>
       </Wrapper>
     </ArrowWrapper>

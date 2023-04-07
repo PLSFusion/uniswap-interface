@@ -78,6 +78,7 @@ export type AssetChange = NftApproval | NftApproveForAll | NftTransfer | TokenAp
 
 export enum Chain {
   Arbitrum = 'ARBITRUM',
+  Bnb = 'BNB',
   Celo = 'CELO',
   Ethereum = 'ETHEREUM',
   EthereumGoerli = 'ETHEREUM_GOERLI',
@@ -97,6 +98,7 @@ export type ContractInput = {
 
 export enum Currency {
   Eth = 'ETH',
+  Matic = 'MATIC',
   Usd = 'USD'
 }
 
@@ -150,7 +152,7 @@ export type NftActivity = {
   asset?: Maybe<NftAsset>;
   fromAddress: Scalars['String'];
   id: Scalars['ID'];
-  marketplace?: Maybe<NftMarketplace>;
+  marketplace?: Maybe<Scalars['String']>;
   orderStatus?: Maybe<OrderStatus>;
   price?: Maybe<Amount>;
   quantity?: Maybe<Scalars['Int']>;
@@ -190,7 +192,7 @@ export enum NftActivityType {
 export type NftApproval = {
   __typename?: 'NftApproval';
   approvedAddress: Scalars['String'];
-  /**   can be erc20 or erc1155 */
+  /**   can be erc721, erc1155, noncompliant */
   asset: NftAsset;
   id: Scalars['ID'];
   nftStandard: NftStandard;
@@ -199,7 +201,7 @@ export type NftApproval = {
 export type NftApproveForAll = {
   __typename?: 'NftApproveForAll';
   approved: Scalars['Boolean'];
-  /**   can be erc721 or erc1155 */
+  /**   can be erc721, erc1155, noncompliant */
   asset: NftAsset;
   id: Scalars['ID'];
   nftStandard: NftStandard;
@@ -235,9 +237,11 @@ export type NftAsset = {
 
 
 export type NftAssetListingsArgs = {
+  _fs?: InputMaybe<Scalars['String']>;
   after?: InputMaybe<Scalars['String']>;
   asc?: InputMaybe<Scalars['Boolean']>;
   before?: InputMaybe<Scalars['String']>;
+  chain?: InputMaybe<Chain>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
@@ -303,6 +307,7 @@ export type NftBalance = {
   listedMarketplaces?: Maybe<Array<NftMarketplace>>;
   listingFees?: Maybe<Array<Maybe<NftFee>>>;
   ownedAsset?: Maybe<NftAsset>;
+  quantity?: Maybe<Scalars['Int']>;
 };
 
 export type NftBalanceConnection = {
@@ -351,6 +356,7 @@ export type NftCollection = {
 
 
 export type NftCollectionMarketsArgs = {
+  _fs?: InputMaybe<Scalars['String']>;
   currencies: Array<Currency>;
 };
 
@@ -382,6 +388,11 @@ export type NftCollectionMarket = {
   volume?: Maybe<TimestampedAmount>;
   volume24h?: Maybe<Amount>;
   volumePercentChange?: Maybe<TimestampedAmount>;
+};
+
+
+export type NftCollectionMarketFloorPriceArgs = {
+  _fs?: InputMaybe<Scalars['String']>;
 };
 
 
@@ -632,6 +643,7 @@ export type Portfolio = {
 
 
 export type PortfolioAssetActivitiesArgs = {
+  _fs?: InputMaybe<Scalars['String']>;
   includeOffChain?: InputMaybe<Scalars['Boolean']>;
   page?: InputMaybe<Scalars['Int']>;
   pageSize?: InputMaybe<Scalars['Int']>;
@@ -651,6 +663,7 @@ export type Query = {
   nftCollectionsById?: Maybe<Array<Maybe<NftCollection>>>;
   nftRoute?: Maybe<NftRouteResponse>;
   portfolios?: Maybe<Array<Maybe<Portfolio>>>;
+  /** @deprecated Use searchTokens */
   searchTokenProjects?: Maybe<Array<Maybe<TokenProject>>>;
   searchTokens?: Maybe<Array<Maybe<Token>>>;
   token?: Maybe<Token>;
@@ -662,46 +675,46 @@ export type Query = {
 
 
 export type QueryNftActivityArgs = {
+  _fs?: InputMaybe<Scalars['String']>;
+  after?: InputMaybe<Scalars['String']>;
   chain?: InputMaybe<Chain>;
-  cursor?: InputMaybe<Scalars['String']>;
   filter?: InputMaybe<NftActivityFilterInput>;
-  limit?: InputMaybe<Scalars['Int']>;
+  first?: InputMaybe<Scalars['Int']>;
 };
 
 
 export type QueryNftAssetsArgs = {
+  _fs?: InputMaybe<Scalars['String']>;
   address: Scalars['String'];
   after?: InputMaybe<Scalars['String']>;
   asc?: InputMaybe<Scalars['Boolean']>;
   before?: InputMaybe<Scalars['String']>;
   chain?: InputMaybe<Chain>;
-  cursor?: InputMaybe<Scalars['String']>;
   filter?: InputMaybe<NftAssetsFilterInput>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
-  limit?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<NftAssetSortableField>;
 };
 
 
 export type QueryNftBalancesArgs = {
+  _fs?: InputMaybe<Scalars['String']>;
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   chain?: InputMaybe<Chain>;
-  cursor?: InputMaybe<Scalars['String']>;
   filter?: InputMaybe<NftBalancesFilterInput>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
-  limit?: InputMaybe<Scalars['Int']>;
   ownerAddress: Scalars['String'];
 };
 
 
 export type QueryNftCollectionsArgs = {
+  _fs?: InputMaybe<Scalars['String']>;
+  after?: InputMaybe<Scalars['String']>;
   chain?: InputMaybe<Chain>;
-  cursor?: InputMaybe<Scalars['String']>;
   filter?: InputMaybe<NftCollectionsFilterInput>;
-  limit?: InputMaybe<Scalars['Int']>;
+  first?: InputMaybe<Scalars['Int']>;
 };
 
 
@@ -719,6 +732,7 @@ export type QueryNftRouteArgs = {
 
 
 export type QueryPortfoliosArgs = {
+  chains?: InputMaybe<Array<Chain>>;
   ownerAddresses: Array<Scalars['String']>;
 };
 
@@ -729,30 +743,36 @@ export type QuerySearchTokenProjectsArgs = {
 
 
 export type QuerySearchTokensArgs = {
+  _fs?: InputMaybe<Scalars['String']>;
   searchQuery: Scalars['String'];
 };
 
 
 export type QueryTokenArgs = {
+  _fs?: InputMaybe<Scalars['String']>;
   address?: InputMaybe<Scalars['String']>;
   chain: Chain;
 };
 
 
 export type QueryTokenProjectsArgs = {
+  _fs?: InputMaybe<Scalars['String']>;
   contracts: Array<ContractInput>;
 };
 
 
 export type QueryTokensArgs = {
+  _fs?: InputMaybe<Scalars['String']>;
   contracts: Array<ContractInput>;
 };
 
 
 export type QueryTopCollectionsArgs = {
+  after?: InputMaybe<Scalars['String']>;
   chains?: InputMaybe<Array<Chain>>;
   cursor?: InputMaybe<Scalars['String']>;
   duration?: InputMaybe<HistoryDuration>;
+  first?: InputMaybe<Scalars['Int']>;
   limit?: InputMaybe<Scalars['Int']>;
   orderBy?: InputMaybe<CollectionSortableField>;
 };
@@ -798,6 +818,11 @@ export type TokenMarketArgs = {
   currency?: InputMaybe<Currency>;
 };
 
+
+export type TokenProjectArgs = {
+  _fs?: InputMaybe<Scalars['String']>;
+};
+
 export type TokenAmount = {
   __typename?: 'TokenAmount';
   currency: Currency;
@@ -813,7 +838,7 @@ export type TokenAmountInput = {
 export type TokenApproval = {
   __typename?: 'TokenApproval';
   approvedAddress: Scalars['String'];
-  /**   can be erc20 or erc1155 */
+  /**   can be erc20 or native */
   asset: Token;
   id: Scalars['ID'];
   quantity: Scalars['String'];
@@ -944,7 +969,6 @@ export enum TokenSortableField {
 
 export enum TokenStandard {
   Erc20 = 'ERC20',
-  Erc1155 = 'ERC1155',
   Native = 'NATIVE'
 }
 

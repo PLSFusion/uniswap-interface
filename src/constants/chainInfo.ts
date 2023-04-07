@@ -1,10 +1,13 @@
 import celoCircleLogoUrl from 'assets/images/celoCircle.png'
 import ethereumLogoUrl from 'assets/images/ethereum-logo.png'
+import ethereumFairLogo from 'assets/images/ethereumFairLogo.png'
+import ethereumPowLogo from 'assets/images/ethereumPowLogo.png'
 import polygonCircleLogoUrl from 'assets/images/polygonCircle.png'
 import { default as arbitrumCircleLogoUrl, default as arbitrumLogoUrl } from 'assets/svg/arbitrum_logo.svg'
 import celoLogo from 'assets/svg/celo_logo.svg'
 import optimismLogoUrl from 'assets/svg/optimistic_ethereum.svg'
 import polygonMaticLogo from 'assets/svg/polygon-matic-logo.svg'
+import pulseChainLogo from 'assets/svg/pulsechain_logo.svg'
 import { SupportedChainId } from 'constants/chains'
 import ms from 'ms.macro'
 import { darkTheme } from 'theme/colors'
@@ -74,6 +77,56 @@ const CHAIN_INFO: ChainInfoMap = {
     logoUrl: ethereumLogoUrl,
     nativeCurrency: { name: 'Görli Ether', symbol: 'görETH', decimals: 18 },
     color: darkTheme.chain_5,
+  },
+  [SupportedChainId.PLS]: {
+    networkType: NetworkType.L1,
+    docs: 'https://docs.uniswap.org/',
+    explorer: 'https://scan.pulsechain.com/',
+    infoLink: 'https://info.uniswap.org/#/',
+    label: 'PulseChain',
+    logoUrl: pulseChainLogo,
+    nativeCurrency: { name: 'Pulse', symbol: 'PLS', decimals: 18 },
+    color: darkTheme.chain_1,
+  },
+  [SupportedChainId.TPLS]: {
+    networkType: NetworkType.L1,
+    docs: 'https://docs.uniswap.org/',
+    explorer: 'https://scan.v3.testnet.pulsechain.com/',
+    infoLink: 'https://info.uniswap.org/#/',
+    label: 'PulseChain Testnet v3',
+    logoUrl: pulseChainLogo,
+    nativeCurrency: { name: 'TPulse', symbol: 'TPLS', decimals: 18 },
+    color: darkTheme.chain_1,
+  },
+  [SupportedChainId.TPLS4]: {
+    networkType: NetworkType.L1,
+    docs: 'https://docs.uniswap.org/',
+    explorer: 'https://scan.v4.testnet.pulsechain.com/',
+    infoLink: 'https://info.uniswap.org/#/',
+    label: 'PulseChain Testnet v4',
+    logoUrl: pulseChainLogo,
+    nativeCurrency: { name: 'TPulse', symbol: 'TPLS', decimals: 18 },
+    color: darkTheme.chain_1,
+  },
+  [SupportedChainId.ETHW]: {
+    networkType: NetworkType.L1,
+    docs: 'https://docs.uniswap.org/',
+    explorer: 'https://www.oklink.com/ethw/',
+    infoLink: 'https://info.uniswap.org/#/',
+    label: 'Ethereum PoW',
+    logoUrl: ethereumPowLogo,
+    nativeCurrency: { name: 'EtherW', symbol: 'ETHW', decimals: 18 },
+    color: darkTheme.chain_1,
+  },
+  [SupportedChainId.ETHF]: {
+    networkType: NetworkType.L1,
+    docs: 'https://docs.uniswap.org/',
+    explorer: 'https://explorer.etherfair.org/',
+    infoLink: 'https://info.uniswap.org/#/',
+    label: 'Ethereum Fair',
+    logoUrl: ethereumFairLogo,
+    nativeCurrency: { name: 'EtherF', symbol: 'ETHF', decimals: 18 },
+    color: darkTheme.chain_1,
   },
   [SupportedChainId.OPTIMISM]: {
     networkType: NetworkType.L2,

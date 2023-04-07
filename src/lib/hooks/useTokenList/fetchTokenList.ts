@@ -8,12 +8,28 @@ export const DEFAULT_TOKEN_LIST = 'https://gateway.ipfs.io/ipns/tokens.uniswap.o
 
 const listCache = new Map<string, TokenList>()
 
+function isJson(item: string) {
+  let value = typeof item !== 'string' ? JSON.stringify(item) : item
+  try {
+    value = JSON.parse(value)
+  } catch (e) {
+    return false
+  }
+
+  return typeof value === 'object' && value !== null
+}
+
 /** Fetches and validates a token list. */
 export default async function fetchTokenList(
   listUrl: string,
   resolveENSContentHash: (ensName: string) => Promise<string>,
   skipValidation?: boolean
 ): Promise<TokenList> {
+  // enable embedding token lists into the uniswap ui.
+  if (isJson(listUrl)) {
+    return JSON.parse(listUrl)
+  }
+
   const cached = listCache?.get(listUrl) // avoid spurious re-fetches
   if (cached) {
     return cached

@@ -4,8 +4,11 @@ import { useMemo } from 'react'
 import { isAddress } from 'utils'
 
 import EthereumLogo from '../../assets/images/ethereum-logo.png'
+import EthereumFairLogo from '../../assets/images/ethereumFairLogo.png'
+import EthereumPowLogo from '../../assets/images/ethereumPowLogo.png'
 import CeloLogo from '../../assets/svg/celo_logo.svg'
 import MaticLogo from '../../assets/svg/matic-token-icon.svg'
+import PulseChainLogo from '../../assets/svg/pulsechain_logo.svg'
 import { isCelo, NATIVE_CHAIN_ID, nativeOnChain } from '../../constants/tokens'
 
 type Network = 'ethereum' | 'arbitrum' | 'optimism' | 'polygon'
@@ -27,6 +30,14 @@ export function chainIdToNetworkName(networkId: SupportedChainId): Network {
 
 export function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.MAINNET): string {
   switch (chainId) {
+    case SupportedChainId.PLS:
+    case SupportedChainId.TPLS:
+    case SupportedChainId.TPLS4:
+      return PulseChainLogo
+    case SupportedChainId.ETHW:
+      return EthereumPowLogo
+    case SupportedChainId.ETHF:
+      return EthereumFairLogo
     case SupportedChainId.POLYGON:
     case SupportedChainId.POLYGON_MUMBAI:
       return MaticLogo

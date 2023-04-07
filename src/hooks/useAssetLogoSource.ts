@@ -37,6 +37,11 @@ function prioritizeLogoSources(uris: string[]) {
 function getInitialUrl(address?: string | null, chainId?: number | null, isNative?: boolean) {
   if (chainId && isNative) return getNativeLogoURI(chainId)
 
+  // wrapped tokens that aren't WETH
+  if (chainId === 942 && address === '0x70499adEBB11Efd915E3b69E700c331778628707') return getNativeLogoURI(chainId)
+  else if (chainId === 10001 && address === '0x7Bf88d2c0e32dE92CdaF2D43CcDc23e8Edfd5990')
+    return getNativeLogoURI(chainId)
+
   const networkName = chainId ? chainIdToNetworkName(chainId) : 'ethereum'
   const checksummedAddress = isAddress(address)
   if (checksummedAddress) {

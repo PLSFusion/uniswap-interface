@@ -1,0 +1,302 @@
+{
+  "name": "PulseFusion Token List",
+  "timestamp": "2023-01-01T00:00:00.0000",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "",
+  "keywords": ["PulseFusion", "PulseChain", "HEX", "Hedron", "Icosa"],
+  "tokens": [
+    {
+      "name": "Wrapped Pulse",
+      "address": "0x70499adEBB11Efd915E3b69E700c331778628707",
+      "symbol": "WPLS",
+      "decimals": 18,
+      "chainId": 942,
+      "logoURI": ""
+    },
+    {
+      "name": "Wrapped Ether PoW",
+      "address": "0x7Bf88d2c0e32dE92CdaF2D43CcDc23e8Edfd5990",
+      "symbol": "WETHW",
+      "decimals": 18,
+      "chainId": 10001,
+      "logoURI": ""
+    },
+    {
+      "name": "Hedron",
+      "address": "0x3819f64f282bf135d62168C1e513280dAF905e06",
+      "symbol": "HDRN",
+      "decimals": 9,
+      "chainId": 1,
+      "logoURI": "https://app.icosa.pro/tokenimgs/hdrn256.png"
+    },
+    {
+      "name": "Hedron",
+      "address": "0x3819f64f282bf135d62168C1e513280dAF905e06",
+      "symbol": "HDRN",
+      "decimals": 9,
+      "chainId": 369,
+      "logoURI": "https://app.icosa.pro/tokenimgs/hdrn256.png"
+    },
+    {
+      "name": "Hedron",
+      "address": "0x3819f64f282bf135d62168C1e513280dAF905e06",
+      "symbol": "HDRN",
+      "decimals": 9,
+      "chainId": 942,
+      "logoURI": "https://app.icosa.pro/tokenimgs/hdrn256.png"
+    },
+    {
+      "name": "Hedron",
+      "address": "0x3819f64f282bf135d62168C1e513280dAF905e06",
+      "symbol": "HDRN",
+      "decimals": 9,
+      "chainId": 943,
+      "logoURI": "https://app.icosa.pro/tokenimgs/hdrn256.png"
+    },
+    {
+      "name": "Hedron",
+      "address": "0x3819f64f282bf135d62168C1e513280dAF905e06",
+      "symbol": "HDRN",
+      "decimals": 9,
+      "chainId": 10001,
+      "logoURI": "https://app.icosa.pro/tokenimgs/hdrn256.png"
+    },
+    {
+      "name": "Hedron",
+      "address": "0x3819f64f282bf135d62168C1e513280dAF905e06",
+      "symbol": "HDRN",
+      "decimals": 9,
+      "chainId": 513100,
+      "logoURI": "https://app.icosa.pro/tokenimgs/hdrn256.png"
+    },
+    {
+      "name": "HEX",
+      "address": "0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
+      "symbol": "HEX",
+      "decimals": 8,
+      "chainId": 1,
+      "logoURI": "https://app.icosa.pro/tokenimgs/hex256.png"
+    },
+    {
+      "name": "HEX",
+      "address": "0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
+      "symbol": "HEX",
+      "decimals": 8,
+      "chainId": 369,
+      "logoURI": "https://app.icosa.pro/tokenimgs/hex256.png"
+    },
+    {
+      "name": "HEX",
+      "address": "0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
+      "symbol": "HEX",
+      "decimals": 8,
+      "chainId": 942,
+      "logoURI": "https://app.icosa.pro/tokenimgs/hex256.png"
+    },
+    {
+      "name": "HEX",
+      "address": "0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
+      "symbol": "HEX",
+      "decimals": 8,
+      "chainId": 943,
+      "logoURI": "https://app.icosa.pro/tokenimgs/hex256.png"
+    },
+    {
+      "name": "HEX",
+      "address": "0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
+      "symbol": "HEX",
+      "decimals": 8,
+      "chainId": 10001,
+      "logoURI": "https://app.icosa.pro/tokenimgs/hex256.png"
+    },
+    {
+      "name": "HEX",
+      "address": "0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
+      "symbol": "HEX",
+      "decimals": 8,
+      "chainId": 513100,
+      "logoURI": "https://app.icosa.pro/tokenimgs/hex256.png"
+    },
+    {
+      "name": "Icosa",
+      "address": "0xfc4913214444aF5c715cc9F7b52655e788A569ed",
+      "symbol": "ICSA",
+      "decimals": 9,
+      "chainId": 1,
+      "logoURI": "https://app.icosa.pro/tokenimgs/icsa256.png"
+    },
+    {
+      "name": "Icosa",
+      "address": "0xfc4913214444aF5c715cc9F7b52655e788A569ed",
+      "symbol": "ICSA",
+      "decimals": 9,
+      "chainId": 369,
+      "logoURI": "https://app.icosa.pro/tokenimgs/icsa256.png"
+    },
+    {
+      "name": "Icosa",
+      "address": "0xfc4913214444aF5c715cc9F7b52655e788A569ed",
+      "symbol": "ICSA",
+      "decimals": 9,
+      "chainId": 942,
+      "logoURI": "https://app.icosa.pro/tokenimgs/icsa256.png"
+    },
+    {
+      "name": "Icosa",
+      "address": "0xfc4913214444aF5c715cc9F7b52655e788A569ed",
+      "symbol": "ICSA",
+      "decimals": 9,
+      "chainId": 943,
+      "logoURI": "https://app.icosa.pro/tokenimgs/icsa256.png"
+    },
+    {
+      "name": "Icosa",
+      "address": "0xfc4913214444aF5c715cc9F7b52655e788A569ed",
+      "symbol": "ICSA",
+      "decimals": 9,
+      "chainId": 10001,
+      "logoURI": "https://app.icosa.pro/tokenimgs/icsa256.png"
+    },
+    {
+      "name": "Icosa",
+      "address": "0xfc4913214444aF5c715cc9F7b52655e788A569ed",
+      "symbol": "ICSA",
+      "decimals": 9,
+      "chainId": 513100,
+      "logoURI": "https://app.icosa.pro/tokenimgs/icsa256.png"
+    },
+    {
+      "name": "USDCoin (Not Stable!)",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "symbol": "USDC",
+      "decimals": 6,
+      "chainId": 369,
+      "logoURI": ""
+    },
+    {
+      "name": "USDCoin (Not Stable!)",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "symbol": "USDC",
+      "decimals": 6,
+      "chainId": 942,
+      "logoURI": ""
+    },
+    {
+      "name": "USDCoin (Not Stable!)",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "symbol": "USDC",
+      "decimals": 6,
+      "chainId": 943,
+      "logoURI": ""
+    },
+    {
+      "name": "USDCoin (Not Stable!)",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "symbol": "USDC",
+      "decimals": 6,
+      "chainId": 10001,
+      "logoURI": ""
+    },
+    {
+      "name": "USDCoin (Not Stable!)",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "symbol": "USDC",
+      "decimals": 6,
+      "chainId": 513100,
+      "logoURI": ""
+    },
+    {
+      "name": "Dai (Not Stable!)",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "symbol": "DAI",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": ""
+    },
+    {
+      "name": "Dai (Not Stable!)",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "symbol": "DAI",
+      "decimals": 18,
+      "chainId": 942,
+      "logoURI": ""
+    },
+    {
+      "name": "Dai (Not Stable!)",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "symbol": "DAI",
+      "decimals": 18,
+      "chainId": 943,
+      "logoURI": ""
+    },
+    {
+      "name": "Dai (Not Stable!)",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "symbol": "DAI",
+      "decimals": 18,
+      "chainId": 10001,
+      "logoURI": ""
+    },
+    {
+      "name": "Dai (Not Stable!)",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "symbol": "DAI",
+      "decimals": 18,
+      "chainId": 513100,
+      "logoURI": ""
+    },
+    {
+      "name": "Tether USD (Not Stable!)",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "decimals": 6,
+      "chainId": 369,
+      "logoURI": ""
+    },
+    {
+      "name": "Tether USD (Not Stable!)",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "decimals": 6,
+      "chainId": 942,
+      "logoURI": ""
+    },
+    {
+      "name": "Tether USD (Not Stable!)",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "decimals": 6,
+      "chainId": 943,
+      "logoURI": ""
+    },
+    {
+      "name": "Tether USD (Not Stable!)",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "decimals": 6,
+      "chainId": 10001,
+      "logoURI": ""
+    },
+    {
+      "name": "Tether USD (Not Stable!)",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "decimals": 6,
+      "chainId": 513100,
+      "logoURI": ""
+    },
+    {
+      "name": "ePhiat",
+      "address": "0xE9F721E7419423f11863e83DbD710b5D6127b5b0",
+      "symbol": "ePhiat",
+      "decimals": 18,
+      "chainId": 1,
+      "logoURI": "https://phiat.io/static/media/phiat_icon.8f15d25445c3c21fbcec08eb7d37485b.svg"
+    }
+  ]
+}

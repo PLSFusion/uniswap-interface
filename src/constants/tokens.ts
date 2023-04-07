@@ -11,12 +11,175 @@ export const NATIVE_CHAIN_ID = 'NATIVE'
 // https://docs.openzeppelin.com/contracts/3.x/erc20
 export const DEFAULT_ERC20_DECIMALS = 18
 
+// relaunched wrapped native tokens
+export const WETHW = new Token(
+  SupportedChainId.ETHW,
+  '0x7Bf88d2c0e32dE92CdaF2D43CcDc23e8Edfd5990',
+  18,
+  'WETHW',
+  'Wrapped Ether PoW'
+)
+export const WTPLS = new Token(
+  SupportedChainId.TPLS,
+  '0x70499adEBB11Efd915E3b69E700c331778628707',
+  18,
+  'WPLS',
+  'Wrapped Pulse'
+)
+
+// PulseFusion additional tokens
+export const HDRN_MAINNET = new Token(
+  SupportedChainId.MAINNET,
+  '0x3819f64f282bf135d62168C1e513280dAF905e06',
+  9,
+  'HDRN',
+  'Hedron'
+)
+export const HDRN_PLS = new Token(
+  SupportedChainId.PLS,
+  '0x3819f64f282bf135d62168C1e513280dAF905e06',
+  9,
+  'HDRN',
+  'Hedron'
+)
+export const HDRN_TPLS = new Token(
+  SupportedChainId.TPLS,
+  '0x3819f64f282bf135d62168C1e513280dAF905e06',
+  9,
+  'HDRN',
+  'Hedron'
+)
+export const HDRN_TPLS4 = new Token(
+  SupportedChainId.TPLS4,
+  '0x3819f64f282bf135d62168C1e513280dAF905e06',
+  9,
+  'HDRN',
+  'Hedron'
+)
+export const HDRN_ETHW = new Token(
+  SupportedChainId.ETHW,
+  '0x3819f64f282bf135d62168C1e513280dAF905e06',
+  9,
+  'HDRN',
+  'Hedron'
+)
+export const HDRN_ETHF = new Token(
+  SupportedChainId.ETHF,
+  '0x3819f64f282bf135d62168C1e513280dAF905e06',
+  9,
+  'HDRN',
+  'Hedron'
+)
+export const HEX_MAINNET = new Token(
+  SupportedChainId.MAINNET,
+  '0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39',
+  8,
+  'HEX',
+  'HEX'
+)
+export const HEX_PLS = new Token(SupportedChainId.PLS, '0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39', 8, 'HEX', 'HEX')
+export const HEX_TPLS = new Token(SupportedChainId.TPLS, '0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39', 8, 'HEX', 'HEX')
+export const HEX_TPLS4 = new Token(
+  SupportedChainId.TPLS4,
+  '0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39',
+  8,
+  'HEX',
+  'HEX'
+)
+export const HEX_ETHW = new Token(SupportedChainId.ETHW, '0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39', 8, 'HEX', 'HEX')
+export const HEX_ETHF = new Token(SupportedChainId.ETHF, '0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39', 8, 'HEX', 'HEX')
+export const ICSA_MAINNET = new Token(
+  SupportedChainId.MAINNET,
+  '0xfc4913214444aF5c715cc9F7b52655e788A569ed',
+  9,
+  'ICSA',
+  'Icosa'
+)
+export const ICSA_PLS = new Token(
+  SupportedChainId.PLS,
+  '0xfc4913214444aF5c715cc9F7b52655e788A569ed',
+  9,
+  'ICSA',
+  'Icosa'
+)
+export const ICSA_TPLS = new Token(
+  SupportedChainId.TPLS,
+  '0xfc4913214444aF5c715cc9F7b52655e788A569ed',
+  9,
+  'ICSA',
+  'Icosa'
+)
+export const ICSA_TPLS4 = new Token(
+  SupportedChainId.TPLS4,
+  '0xfc4913214444aF5c715cc9F7b52655e788A569ed',
+  9,
+  'ICSA',
+  'Icosa'
+)
+export const ICSA_ETHW = new Token(
+  SupportedChainId.ETHW,
+  '0xfc4913214444aF5c715cc9F7b52655e788A569ed',
+  9,
+  'ICSA',
+  'Icosa'
+)
+export const ICSA_ETHF = new Token(
+  SupportedChainId.ETHF,
+  '0xfc4913214444aF5c715cc9F7b52655e788A569ed',
+  9,
+  'ICSA',
+  'Icosa'
+)
+export const PHIAT_MAINNET = new Token(
+  SupportedChainId.MAINNET,
+  '0xE9F721E7419423f11863e83DbD710b5D6127b5b0',
+  18,
+  'ePhiat',
+  'ePhiat'
+)
+
+// uniswap standard tokens
 export const USDC_MAINNET = new Token(
   SupportedChainId.MAINNET,
   '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
   6,
   'USDC',
   'USD//C'
+)
+export const USDC_PLS = new Token(
+  SupportedChainId.PLS,
+  '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+  6,
+  'USDC',
+  'USDCoin (Not Stable!)'
+)
+export const USDC_TPLS = new Token(
+  SupportedChainId.TPLS,
+  '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+  6,
+  'USDC',
+  'USDCoin (Not Stable!)'
+)
+export const USDC_TPLS4 = new Token(
+  SupportedChainId.TPLS4,
+  '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+  6,
+  'USDC',
+  'USDCoin (Not Stable!)'
+)
+export const USDC_ETHW = new Token(
+  SupportedChainId.ETHW,
+  '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+  6,
+  'USDC',
+  'USDCoin (Not Stable!)'
+)
+export const USDC_ETHF = new Token(
+  SupportedChainId.ETHF,
+  '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+  6,
+  'USDC',
+  'USDCoin (Not Stable!)'
 )
 const USDC_GOERLI = new Token(
   SupportedChainId.GOERLI,
@@ -88,6 +251,41 @@ export const DAI = new Token(
   'DAI',
   'Dai Stablecoin'
 )
+export const DAI_PLS = new Token(
+  SupportedChainId.PLS,
+  '0x6B175474E89094C44Da98b954EedeAC495271d0F',
+  18,
+  'DAI',
+  'Dai (Not Stable!)'
+)
+export const DAI_TPLS = new Token(
+  SupportedChainId.TPLS,
+  '0x6B175474E89094C44Da98b954EedeAC495271d0F',
+  18,
+  'DAI',
+  'Dai (Not Stable!)'
+)
+export const DAI_TPLS4 = new Token(
+  SupportedChainId.TPLS4,
+  '0x6B175474E89094C44Da98b954EedeAC495271d0F',
+  18,
+  'DAI',
+  'Dai (Not Stable!)'
+)
+export const DAI_ETHW = new Token(
+  SupportedChainId.ETHW,
+  '0x6B175474E89094C44Da98b954EedeAC495271d0F',
+  18,
+  'DAI',
+  'Dai (Not Stable!)'
+)
+export const DAI_ETHF = new Token(
+  SupportedChainId.ETHF,
+  '0x6B175474E89094C44Da98b954EedeAC495271d0F',
+  18,
+  'DAI',
+  'Dai (Not Stable!)'
+)
 export const DAI_ARBITRUM_ONE = new Token(
   SupportedChainId.ARBITRUM_ONE,
   '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1',
@@ -129,6 +327,41 @@ export const USDT = new Token(
   6,
   'USDT',
   'Tether USD'
+)
+export const USDT_PLS = new Token(
+  SupportedChainId.PLS,
+  '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+  6,
+  'USDT',
+  'Tether USD (Not Stable!)'
+)
+export const USDT_TPLS = new Token(
+  SupportedChainId.TPLS,
+  '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+  6,
+  'USDT',
+  'Tether USD (Not Stable!)'
+)
+export const USDT_TPLS4 = new Token(
+  SupportedChainId.TPLS4,
+  '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+  6,
+  'USDT',
+  'Tether USD (Not Stable!)'
+)
+export const USDT_ETHW = new Token(
+  SupportedChainId.ETHW,
+  '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+  6,
+  'USDT',
+  'Tether USD (Not Stable!)'
+)
+export const USDT_ETHF = new Token(
+  SupportedChainId.ETHF,
+  '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+  6,
+  'USDT',
+  'Tether USD (Not Stable!)'
 )
 export const USDT_ARBITRUM_ONE = new Token(
   SupportedChainId.ARBITRUM_ONE,
@@ -301,6 +534,41 @@ export const UNI: { [chainId: number]: Token } = {
 
 export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } = {
   ...(WETH9 as Record<SupportedChainId, Token>),
+  [SupportedChainId.PLS]: new Token(
+    SupportedChainId.PLS,
+    '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+    18,
+    'WETH',
+    'Wrapped Ether (PLS)'
+  ),
+  [SupportedChainId.TPLS]: new Token(
+    SupportedChainId.TPLS,
+    '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+    18,
+    'WETH',
+    'Wrapped Ether (TPLS)'
+  ),
+  [SupportedChainId.TPLS4]: new Token(
+    SupportedChainId.TPLS4,
+    '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+    18,
+    'WETH',
+    'Wrapped Ether (TPLS)'
+  ),
+  [SupportedChainId.ETHW]: new Token(
+    SupportedChainId.ETHW,
+    '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+    18,
+    'WETH',
+    'Wrapped Ether (ETHW)'
+  ),
+  [SupportedChainId.ETHF]: new Token(
+    SupportedChainId.ETHF,
+    '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+    18,
+    'WETH',
+    'Wrapped Ether (ETHF)'
+  ),
   [SupportedChainId.OPTIMISM]: new Token(
     SupportedChainId.OPTIMISM,
     '0x4200000000000000000000000000000000000006',
@@ -396,6 +664,80 @@ class MaticNativeCurrency extends NativeCurrency {
   }
 }
 
+function isPls(chainId: number): chainId is SupportedChainId.PLS | SupportedChainId.TPLS | SupportedChainId.TPLS4 {
+  return chainId === SupportedChainId.PLS || chainId === SupportedChainId.TPLS || chainId === SupportedChainId.TPLS4
+}
+
+function isTPls(chainId: number): chainId is SupportedChainId.TPLS | SupportedChainId.TPLS4 {
+  return chainId === SupportedChainId.TPLS || chainId === SupportedChainId.TPLS4
+}
+
+class PlsNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isPls(this.chainId)) throw new Error('Not pls')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isPls(chainId)) throw new Error('Not pls')
+    if (isTPls(chainId)) {
+      super(chainId, 18, 'TPLS', 'TPLS')
+    } else {
+      super(chainId, 18, 'PLS', 'PLS')
+    }
+  }
+}
+
+function isEthw(chainId: number): chainId is SupportedChainId.ETHW {
+  return chainId === SupportedChainId.ETHW
+}
+
+class EthwNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isEthw(this.chainId)) throw new Error('Not ethw')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isEthw(chainId)) throw new Error('Not ethw')
+    super(chainId, 18, 'ETHW', 'ETHW')
+  }
+}
+
+function isEthf(chainId: number): chainId is SupportedChainId.ETHF {
+  return chainId === SupportedChainId.ETHF
+}
+
+class EthfNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isEthf(this.chainId)) throw new Error('Not ethf')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isEthf(chainId)) throw new Error('Not ethf')
+    super(chainId, 18, 'ETHF', 'ETHF')
+  }
+}
+
 class ExtendedEther extends Ether {
   public get wrapped(): Token {
     const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
@@ -418,6 +760,12 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
     nativeCurrency = new MaticNativeCurrency(chainId)
   } else if (isCelo(chainId)) {
     nativeCurrency = getCeloNativeCurrency(chainId)
+  } else if (isPls(chainId)) {
+    nativeCurrency = new PlsNativeCurrency(chainId)
+  } else if (isEthw(chainId)) {
+    nativeCurrency = new EthwNativeCurrency(chainId)
+  } else if (isEthf(chainId)) {
+    nativeCurrency = new EthfNativeCurrency(chainId)
   } else {
     nativeCurrency = ExtendedEther.onChain(chainId)
   }

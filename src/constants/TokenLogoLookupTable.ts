@@ -1,6 +1,7 @@
 import store from 'state'
 
 import { DEFAULT_LIST_OF_LISTS } from './lists'
+import pulseFusionList from './tokenLists/pulsefusion.tokenlist.json'
 
 class TokenLogoLookupTable {
   private dict: { [key: string]: string[] | undefined } = {}
@@ -25,6 +26,17 @@ class TokenLogoLookupTable {
           }
         }
       })
+    })
+    pulseFusionList.tokens.forEach((token) => {
+      if (token.logoURI) {
+        const lowercaseAddress = token.address.toLowerCase()
+        const currentEntry = dict[lowercaseAddress + ':' + token.chainId]
+        if (currentEntry) {
+          currentEntry.push(token.logoURI)
+        } else {
+          dict[lowercaseAddress + ':' + token.chainId] = [token.logoURI]
+        }
+      }
     })
     this.dict = dict
     this.initialized = true
