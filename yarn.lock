@@ -5003,10 +5003,10 @@
     react "^18.2.0"
     react-dom "^18.2.0"
 
-"@uniswap/conedison@^1.3.0", "@uniswap/conedison@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@uniswap/conedison/-/conedison-1.4.0.tgz#44ad96333b92913a57be34bf5effcfee6534cba1"
-  integrity sha512-ZZMfPTjUiYpLvO0SuMPGNzkFrRpzf+bQYSL/CzaYKGSVdorRUj4XpeMdjlbuKUtHqUEunOWE8eDL3J1Hl4HOUg==
+"@uniswap/conedison@^1.4.0", "@uniswap/conedison@^1.5.3":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@uniswap/conedison/-/conedison-1.6.0.tgz#9b0bfbed405e74144937be3f68b91f7cf7bb4247"
+  integrity sha512-ZoXOkGgSndRECElK5mAezjbwOlwzkn71swQ3rFQlivPChdLaD0SprCNnuNkwj+sdRm2dRtmX9V3L9KDVVWhLDQ==
 
 "@uniswap/default-token-list@^2.0.0":
   version "2.2.0"
@@ -5096,10 +5096,10 @@
     tiny-invariant "^1.1.0"
     toformat "^2.0.0"
 
-"@uniswap/smart-order-router@^3.6.0":
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/@uniswap/smart-order-router/-/smart-order-router-3.6.0.tgz#45141dd97083725d185b841e0a465ab4107cc1be"
-  integrity sha512-NUkvQiuK8xXpzJf8DFKxpURaUEyvYYWf1tfau7tKI/sV7pFHm7/FGdL6mWo5xq5VWHXy87rkXxfDJCi1M6fa4Q==
+"@uniswap/smart-order-router@^3.10.0", "@uniswap/smart-order-router@^3.6.0":
+  version "3.10.2"
+  resolved "https://registry.yarnpkg.com/@uniswap/smart-order-router/-/smart-order-router-3.10.2.tgz#3884b9abf9f504d8836cc04c58aa009b8af05c63"
+  integrity sha512-Q1+sWP6TENvprggfR4eKdnqMCYAnej/mz29hG/cSssEto6wtBLBQ95In4350Jotz3LiGfOTROrInuzAXfebafA==
   dependencies:
     "@uniswap/default-token-list" "^2.0.0"
     "@uniswap/permit2-sdk" "^1.2.0"
@@ -5107,7 +5107,7 @@
     "@uniswap/swap-router-contracts" "^1.3.0"
     "@uniswap/token-lists" "^1.0.0-beta.25"
     "@uniswap/universal-router" "^1.0.1"
-    "@uniswap/universal-router-sdk" "^1.3.8"
+    "@uniswap/universal-router-sdk" "^1.3.9"
     "@uniswap/v2-sdk" "^3.0.1"
     "@uniswap/v3-sdk" "^3.7.0"
     async-retry "^1.3.1"
@@ -5151,21 +5151,30 @@
   resolved "https://registry.yarnpkg.com/@uniswap/token-lists/-/token-lists-1.0.0-beta.30.tgz#2103ca23b8007c59ec71718d34cdc97861c409e5"
   integrity sha512-HwY2VvkQ8lNR6ks5NqQfAtg+4IZqz3KV1T8d2DlI8emIn9uMmaoFbIOg0nzjqAVKKnZSbMTRRtUoAh6mmjRvog==
 
-"@uniswap/universal-router-sdk@^1.3.6", "@uniswap/universal-router-sdk@^1.3.8":
-  version "1.3.8"
-  resolved "https://registry.yarnpkg.com/@uniswap/universal-router-sdk/-/universal-router-sdk-1.3.8.tgz#1e6bf1081aa6c7f5d800d5b8a20773016c98bbb6"
-  integrity sha512-WwmcIL20DSExTNep31OxyVCMsi/JqRsZsCqZEqwYTP+Ip1qQ9P8mcR3wtGAfBmYlWFS1lcIhI6SDvXayIk6DDw==
+"@uniswap/universal-router-sdk@^1.3.6", "@uniswap/universal-router-sdk@^1.3.8", "@uniswap/universal-router-sdk@^1.3.9":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@uniswap/universal-router-sdk/-/universal-router-sdk-1.4.4.tgz#ed6ffe6c73f96bd95c516620259b7a3a57901b05"
+  integrity sha512-yrcMAYV8Ytpgo2Gyih/4qgBi26okIjr6ztU8aW82gDXt95P3uaShP9Sc3yrOlqeAaUiRUHdPVhxSokMfVDXbRg==
   dependencies:
     "@uniswap/permit2-sdk" "^1.2.0"
     "@uniswap/router-sdk" "^1.4.0"
     "@uniswap/sdk-core" "^3.1.0"
-    "@uniswap/universal-router" "1.2.1"
+    "@uniswap/universal-router" "1.3.1"
     "@uniswap/v2-sdk" "^3.0.1"
     "@uniswap/v3-sdk" "^3.9.0"
     bignumber.js "^9.0.2"
     ethers "^5.3.1"
 
-"@uniswap/universal-router@1.2.1", "@uniswap/universal-router@^1.0.1":
+"@uniswap/universal-router@1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@uniswap/universal-router/-/universal-router-1.3.1.tgz#cf0bf662e3056336c5bb5804e353dc5fd34a24a1"
+  integrity sha512-JJY4Z1aXJ70OB08WKl+wSazTfV7pZ1bXgKRhvPLSv8/4HXxQPCYMVi53Waeu93VdAdaYt1jviWR+uRV6a6/uoA==
+  dependencies:
+    "@openzeppelin/contracts" "4.7.0"
+    "@uniswap/v2-core" "1.0.1"
+    "@uniswap/v3-core" "1.0.0"
+
+"@uniswap/universal-router@^1.0.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@uniswap/universal-router/-/universal-router-1.2.1.tgz#5fe4aa21d6bc89314d99f26407f28154f8e16f42"
   integrity sha512-F3S1wKylncuvIG2qwC1ciXXc1z1QmKsalo4p6H2A90LSRylEEhNp7ITxs7qCcnfRh+ZNkGJ0yQ0zmuVJSBezOQ==
@@ -5255,40 +5264,40 @@
     "@uniswap/v3-core" "1.0.0"
     "@uniswap/v3-periphery" "^1.0.1"
 
-"@uniswap/widgets@^2.44.5":
-  version "2.44.5"
-  resolved "https://registry.yarnpkg.com/@uniswap/widgets/-/widgets-2.44.5.tgz#0242399be78a4e12e8bb64d1a2d53cfc2123bb9b"
-  integrity sha512-IFSXlIWKmRle7HeIFSTN/RiyjtJK0xOteFBD1e3sfjO0lZEtSbQOf2mwTCf/TOdACW3z+ORLuiSlKqL+vk75JA==
+"@uniswap/widgets@^2.51.1":
+  version "2.51.1"
+  resolved "https://registry.yarnpkg.com/@uniswap/widgets/-/widgets-2.51.1.tgz#bcc9d7d3ac4190453aa7def9ae5a7bb211a14802"
+  integrity sha512-SyuyHoAzvLDv5VBecKx8TNBNWwCW3I7tMCs/8AosCt127zCyNJYgPMAC2nnAFgX9jOeB30BfxY7kKYfWriylRg==
   dependencies:
     "@babel/runtime" ">=7.17.0"
     "@fontsource/ibm-plex-mono" "^4.5.1"
     "@fontsource/inter" "^4.5.1"
     "@popperjs/core" "^2.4.4"
     "@reduxjs/toolkit" "^1.6.1"
-    "@uniswap/conedison" "^1.3.0"
+    "@uniswap/conedison" "^1.5.3"
     "@uniswap/permit2-sdk" "^1.2.0"
     "@uniswap/redux-multicall" "^1.1.8"
     "@uniswap/router-sdk" "^1.3.0"
     "@uniswap/sdk-core" "^3.2.0"
-    "@uniswap/smart-order-router" "^3.6.0"
+    "@uniswap/smart-order-router" "^3.10.0"
     "@uniswap/token-lists" "^1.0.0-beta.30"
     "@uniswap/universal-router-sdk" "^1.3.8"
     "@uniswap/v2-sdk" "^3.0.1"
     "@uniswap/v3-sdk" "^3.8.2"
-    "@web3-react/core" "8.1.1-beta.0"
-    "@web3-react/eip1193" "8.1.1-beta.0"
-    "@web3-react/empty" "8.1.1-beta.0"
-    "@web3-react/metamask" "8.1.1-beta.0"
-    "@web3-react/network" "8.1.1-beta.0"
-    "@web3-react/types" "8.1.1-beta.0"
-    "@web3-react/url" "8.1.1-beta.0"
-    "@web3-react/walletconnect" "8.1.1-beta.0"
+    "@web3-react/core" "8.1.2-beta.0"
+    "@web3-react/eip1193" "8.1.2-beta.0"
+    "@web3-react/empty" "8.1.2-beta.0"
+    "@web3-react/metamask" "8.1.2-beta.0"
+    "@web3-react/network" "8.1.2-beta.0"
+    "@web3-react/types" "8.1.2-beta.0"
+    "@web3-react/url" "8.1.2-beta.0"
+    "@web3-react/walletconnect" "8.1.2-beta.0"
     ajv "^8.11.0"
     ajv-formats "^2.1.1"
     cids "^1.0.0"
     ethers "^5.7.2"
     immer "^9.0.6"
-    jotai "^1.3.7"
+    jotai "1.4.0"
     jsbi "^3.1.4"
     make-plural "^7.0.0"
     ms.macro "^2.0.0"
@@ -5822,6 +5831,17 @@
   optionalDependencies:
     "@ethersproject/providers" "^5"
 
+"@web3-react/core@8.1.2-beta.0":
+  version "8.1.2-beta.0"
+  resolved "https://registry.yarnpkg.com/@web3-react/core/-/core-8.1.2-beta.0.tgz#8bc2abb42d06db07c3b577cf8da30d1450e0fb89"
+  integrity sha512-Iv1Xq5ioWECrzsLMWMkZBUkSMHhLL8PBDKR13C+1eBRLL3xwziIsiZj9U9CI9L3NbrC2ImX6k6Tmj/kVhMoUqQ==
+  dependencies:
+    "@web3-react/store" "^8.1.2-beta.0"
+    "@web3-react/types" "^8.1.2-beta.0"
+    zustand "^4.3.5"
+  optionalDependencies:
+    "@ethersproject/providers" "^5"
+
 "@web3-react/eip1193@8.1.1-beta.0":
   version "8.1.1-beta.0"
   resolved "https://registry.yarnpkg.com/@web3-react/eip1193/-/eip1193-8.1.1-beta.0.tgz#7f1d6065d1e3b7f1c6a4c169a1837d0c2b4a4da2"
@@ -5829,12 +5849,26 @@
   dependencies:
     "@web3-react/types" "^8.1.1-beta.0"
 
+"@web3-react/eip1193@8.1.2-beta.0":
+  version "8.1.2-beta.0"
+  resolved "https://registry.yarnpkg.com/@web3-react/eip1193/-/eip1193-8.1.2-beta.0.tgz#ccab0860857b622461cd164259b8cf163c6d3ab9"
+  integrity sha512-LU6ejYvscg04ziq6EiIKjJl6ou0X1knKu7ZtBjKAkoFjLyHO79WTe4ZL/JyFHxgy50OlcyiEiAEI2rghW95X5g==
+  dependencies:
+    "@web3-react/types" "^8.1.2-beta.0"
+
 "@web3-react/empty@8.1.1-beta.0":
   version "8.1.1-beta.0"
   resolved "https://registry.yarnpkg.com/@web3-react/empty/-/empty-8.1.1-beta.0.tgz#b032a721bde722c02c6720e7944110b9622a96cb"
   integrity sha512-gmTX7KHrpnJgX/V5lxCpFhEk06RdSl3jCYCf2H9HOlypZ4JcRHNq9wiwUJocdUnhHbdD46J5D9N4YEDhVgtn9g==
   dependencies:
     "@web3-react/types" "^8.1.1-beta.0"
+
+"@web3-react/empty@8.1.2-beta.0":
+  version "8.1.2-beta.0"
+  resolved "https://registry.yarnpkg.com/@web3-react/empty/-/empty-8.1.2-beta.0.tgz#9acd888e0ecf2d11618ccbff34ccb0f511db626c"
+  integrity sha512-DW7W8exbpAxOLSoX0mcxY3C/wgcRdemoRP+8mdjmO8NugR+XtsnTDfgIN/Z9e9hk6kp240ipvk62nAJcnNa9og==
+  dependencies:
+    "@web3-react/types" "^8.1.2-beta.0"
 
 "@web3-react/gnosis-safe@8.1.1-beta.0":
   version "8.1.1-beta.0"
@@ -5853,6 +5887,14 @@
     "@metamask/detect-provider" "^1.2.0"
     "@web3-react/types" "^8.1.1-beta.0"
 
+"@web3-react/metamask@8.1.2-beta.0":
+  version "8.1.2-beta.0"
+  resolved "https://registry.yarnpkg.com/@web3-react/metamask/-/metamask-8.1.2-beta.0.tgz#671f8b9601b275a4d7ca8cc694e6530c3c35ad4b"
+  integrity sha512-nw555Q86+I5EuLJnWILQIbhAaFdKNBugCNlsO00uJYSFPh26u+5KcNVl4G+7E2cCEY4cT0OhNOOGIYSZFuWADg==
+  dependencies:
+    "@metamask/detect-provider" "^1.2.0"
+    "@web3-react/types" "^8.1.2-beta.0"
+
 "@web3-react/network@8.1.1-beta.0":
   version "8.1.1-beta.0"
   resolved "https://registry.yarnpkg.com/@web3-react/network/-/network-8.1.1-beta.0.tgz#b6feb407f3d48c9793fdbe428e9e7a29c71f11ee"
@@ -5860,6 +5902,14 @@
   dependencies:
     "@ethersproject/providers" "^5"
     "@web3-react/types" "^8.1.1-beta.0"
+
+"@web3-react/network@8.1.2-beta.0":
+  version "8.1.2-beta.0"
+  resolved "https://registry.yarnpkg.com/@web3-react/network/-/network-8.1.2-beta.0.tgz#a9246e5ab922d31a1ac0890cacee91b1394a91ed"
+  integrity sha512-aLQKpH6lUmKhz2X6C8hdw9dZBq2vRmDHy0i9+pXgbnCpGVfZ4iKzmfWB/Cj5d2WLJAyxgO6PfiGSMxL0sWFWcQ==
+  dependencies:
+    "@ethersproject/providers" "^5"
+    "@web3-react/types" "^8.1.2-beta.0"
 
 "@web3-react/store@^8.1.1-beta.0":
   version "8.1.1-beta.0"
@@ -5870,12 +5920,28 @@
     "@web3-react/types" "^8.1.1-beta.0"
     zustand "4.3.3"
 
+"@web3-react/store@^8.1.2-beta.0":
+  version "8.1.2-beta.0"
+  resolved "https://registry.yarnpkg.com/@web3-react/store/-/store-8.1.2-beta.0.tgz#014a402a428a483ad7bde6247210294312864148"
+  integrity sha512-Xmogyl52zSYkPILwt+LjFIlTSlwrx25IrotrONglE37Pq263k/AAMii3AlblDuUF3CWSuxnq2YPuhZ4PODVaKA==
+  dependencies:
+    "@ethersproject/address" "^5"
+    "@web3-react/types" "^8.1.2-beta.0"
+    zustand "^4.3.5"
+
 "@web3-react/types@8.1.1-beta.0", "@web3-react/types@^8.1.1-beta.0":
   version "8.1.1-beta.0"
   resolved "https://registry.yarnpkg.com/@web3-react/types/-/types-8.1.1-beta.0.tgz#fe1b7bf256053cd6dfebb005cf689aacf04a29e4"
   integrity sha512-H9iI8fmaytuNRXdk9+60nnhu3wyPJs6xa836ay+x+pJfqTM9EbJJUsTsNWSBEDevGGUIaE97yKD3izOcvfqnFg==
   dependencies:
     zustand "4.3.3"
+
+"@web3-react/types@8.1.2-beta.0", "@web3-react/types@^8.1.2-beta.0":
+  version "8.1.2-beta.0"
+  resolved "https://registry.yarnpkg.com/@web3-react/types/-/types-8.1.2-beta.0.tgz#439e3a539688e91b677a3959d2e1bf56c33eaa96"
+  integrity sha512-gvVJqRvGsABpoUZA7RWQQiOq5qv5exkUW6ouSjlO4Q5BkfCBgT4NlIUVQ91w3JnS5qkDpk/uKDMt+wDFw0Yssw==
+  dependencies:
+    zustand "^4.3.5"
 
 "@web3-react/url@8.1.1-beta.0":
   version "8.1.1-beta.0"
@@ -5885,6 +5951,14 @@
     "@ethersproject/providers" "^5"
     "@web3-react/types" "^8.1.1-beta.0"
 
+"@web3-react/url@8.1.2-beta.0":
+  version "8.1.2-beta.0"
+  resolved "https://registry.yarnpkg.com/@web3-react/url/-/url-8.1.2-beta.0.tgz#cf8fc5b48f2a8859d88df85583316c11e2e80e65"
+  integrity sha512-bVLL5PPi1hKLSWmKpVh6BytXJ9GKBdJzW0u3wQ/xCeG9f3yPtfQhjTmAAHtVylS4Me4y4xLk8eEkQ6JLZJflAQ==
+  dependencies:
+    "@ethersproject/providers" "^5"
+    "@web3-react/types" "^8.1.2-beta.0"
+
 "@web3-react/walletconnect@8.1.1-beta.0":
   version "8.1.1-beta.0"
   resolved "https://registry.yarnpkg.com/@web3-react/walletconnect/-/walletconnect-8.1.1-beta.0.tgz#6c699e8634bdc66dae7c8b982ba5553bbf86c1c5"
@@ -5892,6 +5966,15 @@
   dependencies:
     "@walletconnect/ethereum-provider" "^1.7.8"
     "@web3-react/types" "^8.1.1-beta.0"
+    eventemitter3 "^4.0.7"
+
+"@web3-react/walletconnect@8.1.2-beta.0":
+  version "8.1.2-beta.0"
+  resolved "https://registry.yarnpkg.com/@web3-react/walletconnect/-/walletconnect-8.1.2-beta.0.tgz#c2716685aed59ad54467cc72292580acdb03976f"
+  integrity sha512-m5m1jsho6mX6ChVtfe+vDVa50VTAxe8SjcayLY690z91N7hwAdvgMbqZoaR3yj0uHT7HzpB5ucYSfJ2FFSekbQ==
+  dependencies:
+    "@walletconnect/ethereum-provider" "^1.7.8"
+    "@web3-react/types" "^8.1.2-beta.0"
     eventemitter3 "^4.0.7"
 
 "@webassemblyjs/ast@1.9.0":
@@ -13086,7 +13169,7 @@ jest@26.6.0:
     import-local "^3.0.2"
     jest-cli "^26.6.0"
 
-jotai@^1.3.7:
+jotai@1.4.0, jotai@^1.3.7:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/jotai/-/jotai-1.4.0.tgz#0f350f65a968dd3ee2f9ad3618a3af635cd10220"
   integrity sha512-CUB+A3N+WjtimZvtDnMXvVRognzKh86KB3rKnQlbRvpnmGYU+O9aOZMWSgTaxstXc4Y5GYy02LBEjiv4Rs8MAg==
@@ -20272,5 +20355,12 @@ zustand@^4.0.0-rc.1:
   version "4.3.5"
   resolved "https://registry.yarnpkg.com/zustand/-/zustand-4.3.5.tgz#011d2997534f8a187ea7b1d75db56df31f58453d"
   integrity sha512-2iPUzfwx+g3f0PagOMz2vDO9mZzEp2puFpNe7vrAymVPOEIEUjCPkC4/zy84eAscxIWmTU4j9g6upXYkJdzEFQ==
+  dependencies:
+    use-sync-external-store "1.2.0"
+
+zustand@^4.3.5:
+  version "4.3.7"
+  resolved "https://registry.yarnpkg.com/zustand/-/zustand-4.3.7.tgz#501b1f0393a7f1d103332e45ab574be5747fedce"
+  integrity sha512-dY8ERwB9Nd21ellgkBZFhudER8KVlelZm8388B5nDAXhO/+FZDhYMuRnqDgu5SYyRgz/iaf8RKnbUs/cHfOGlQ==
   dependencies:
     use-sync-external-store "1.2.0"
