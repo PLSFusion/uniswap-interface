@@ -137,7 +137,12 @@ export function useERC20Permit(
       !tokenNonceState.valid ||
       !tokenAddress ||
       !spender ||
-      !permitInfo
+      !permitInfo ||
+      chainId == 369 ||
+      chainId == 942 ||
+      chainId == 943 ||
+      chainId == 10001 ||
+      chainId == 513100
     ) {
       return {
         state: UseERC20PermitState.NOT_APPLICABLE,
