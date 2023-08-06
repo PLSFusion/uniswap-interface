@@ -1,5 +1,4 @@
 import { Trans } from '@lingui/macro'
-import { sendEvent } from 'components/analytics'
 import Card, { DarkGrayCard } from 'components/Card'
 import Row, { AutoRow, RowBetween } from 'components/Row'
 import { useEffect, useRef } from 'react'
@@ -86,11 +85,6 @@ export function PrivacyPolicyModal() {
 
   useEffect(() => {
     if (!open) return
-
-    sendEvent({
-      category: 'Modal',
-      action: 'Show Legal',
-    })
   }, [open])
 
   return (

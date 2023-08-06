@@ -16,6 +16,8 @@ export type Scalars = {
   BigDecimal: any;
   BigInt: any;
   Bytes: any;
+  /** 8 bytes signed integer */
+  Int8: any;
 };
 
 export type BlockChangedFilter = {
